@@ -22,12 +22,15 @@ h2 {
     background-color: honeydew;
     width:400px;
     height: 400px;
-
 }
 
-td,th{
-    text-align: left;
-    padding-right:10px;
+.kanjiarea{
+    background-color: mistyrose;
+    color:black;
+    width:400px;
+    height:400px;
+    font-size:300px;
+    text-align: center;
 }
 
 .keyname{
