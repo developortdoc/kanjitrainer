@@ -1,2 +1,3 @@
-# shinytodo
-HTML+JavaScript TodoApp using browser webstorage for saving data?
+#Kanji trainer
+Webapp for kanji-training, interface: HTML5+JavaScript, engine: Python+Flask
+
