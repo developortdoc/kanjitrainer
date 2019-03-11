@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block script %}<script src="{{ url_for('static', filename='draw.js') }}">
+    </script>{% endblock %}
+
+{% block content %}
+    <div class="drawingcanvas">
+        <canvas id="drawing" width="400" height="400">
+        </canvas>
+    </div>
+{% endblock %}

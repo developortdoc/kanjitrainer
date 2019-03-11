@@ -1,0 +1,10 @@
+<!doctype html>
+<head>
+    <title>{% block title %}{% endblock %} - FlaskでWebDB</title>
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}">
+        {% block script %}{% endblock %}
+</head>
+<body>
+    {% block content %}{% endblock %}
+</body>
