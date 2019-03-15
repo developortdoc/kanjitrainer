@@ -24,11 +24,9 @@
     <form method="post" action="{{ url_for('draw.save')}}" class="newform">
         描画データを保存します
         <input type="hidden" id="kanji" name="kanji" value="{{kanji}}">
-        <input type="hidden" id="jsondata" name="jsondata">
+        <textarea id="jsondata" name="jsondata"></textarea>
         <input type="submit" value="保存">
     </form>
-    
-
     <script src="{{ url_for('static', filename='draw.js') }}"></script>
 
 {% endblock %}

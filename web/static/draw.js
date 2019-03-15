@@ -8,7 +8,6 @@ var nowx=0;
 var nowy=0;
 var active=false;
 var points=[];
-var jsonstr="";
 
 
 cvs.mousedown(
@@ -37,7 +36,7 @@ cvs.mousemove(
  cvs.mouseup(
     function(e){
         active=false;
-        $("#jsondata").val(JSON.stringify(points));
+        $("#jsondata").html(JSON.stringify(points));
       } 
  )
 

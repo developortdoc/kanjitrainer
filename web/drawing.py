@@ -26,4 +26,4 @@ def save():
 def readingtest():
     db=get_db()
     testdata = db.execute('SELECT * FROM kanjis').fetchone()
-    return render_template('kanjireader.html', data=testdata)
+    return render_template('kreader.html', data=testdata)
