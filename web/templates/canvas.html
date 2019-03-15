@@ -6,13 +6,25 @@
 {% endblock %}
 
 {% block content %}
-    <div  id="kanjiarea" class="kanjiarea">
-            {{kanji}}
+    <h1>漢字練習アプリ</h1>
+    <form method="post">
+        <label for="kanjitext">漢字を入力</label>
+        <input name="kanjitext" value="{{kanji}}" size="20">
+        <input type="submit" value="練習">
+    </form>
+    <div>
+        <span id="kanjiarea" class="kanjiarea">
+                {{kanji}}   
+        </span>  
+        <canvas id="drawing" width="400" height="400">
+        </canvas>
     </div>
-    <div  id="drawingcanvas" class="drawingcanvas">
-            <canvas id="drawing" width="400" height="400">
-            </canvas>
-    </div>
+    
+    <form method="post" action="{{ url_for('draw.save', kanji=kanji)}}"">
+        <input type="hidden" id="data_json" name="data_json">
+        <input type="submit" value="保存">
+    </form>
 
     <script src="{{ url_for('static', filename='draw.js') }}"></script>
+
 {% endblock %}

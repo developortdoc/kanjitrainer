@@ -5,6 +5,10 @@ body {
     background: beige;
 }
 
+canvas{
+    display: inline;
+}
+
 h1 {
     background:olive; 
     color: khaki;
@@ -18,19 +22,12 @@ h2 {
     margin-bottom:20px;
 }
 
-.drawingcanvas{
-    background-color: honeydew;
-    width:400px;
-    height: 400px;
-}
-
 .kanjiarea{
     background-color: mistyrose;
     color:black;
-    width:400px;
-    height:400px;
-    font-size:300px;
-    text-align: center;
+    font-size:300px;  
+    padding-left:40px;
+    vertical-align: top; 
 }
 
 .keyname{
