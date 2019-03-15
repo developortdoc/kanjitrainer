@@ -37,7 +37,7 @@ cvs.mousemove(
  cvs.mouseup(
     function(e){
         active=false;
-        $("#data_json").val(JSON.stringify(points));
+        $("#jsondata").val(JSON.stringify(points));
       } 
  )
 

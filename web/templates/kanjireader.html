@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block script %}
+<script src="{{ url_for('static', filename='jquery-3.3.1.min.js') }}"></script>
+
+
+{% endblock %}
+
+{% block content %}
+    <h1>漢字の手書き認識</h1>
+    <p>{{data['kanji']}}</p>
+    <p>{{data['jsondata']}}</p>
+   
+
+{% endblock %}
